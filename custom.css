@@ -11,3 +11,16 @@ html {
 .container {
   background-color: transparent;
 }
+
+.footer {
+  background-color: rgba(238, 238, 238, 0.5);
+  color: #111;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px;
+}
+
+.footer p {
+  margin: 0;
+}
