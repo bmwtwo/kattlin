@@ -18,12 +18,28 @@
         <h1>Looking to sell your home in Kelowna?</h1>
         <p>Even if you just want to find its value, enter your email address below, and we'll
         be in touch!</p>
-        <form class="form-inline" role="form">
-          <div class="form-group">
-            <!-- TODO: add labels for screen readers -->
-            <input class="form-control" type="text" placeholder="email address" />
+        <form role="form">
+          <div class="row">
+            <div class="col-md-3 form-group">
+              <label class="sr-only" for="street">Street name &amp; number</label>
+              <input type="text" class="form-control" id="street" placeholder="Street name &amp; number" />
+            </div>
+            <div class="col-md-1 form-group">
+              <label class="sr-only" for="unit">Appartment #</label>
+              <input type="text" class="form-control" id="unit" placeholder="Unit #" />
+            </div>
+            <div class="col-md-2 form-group">
+              <label class="sr-only" for="city">City</label>
+              <input type="text" class="form-control" id="city" placeholder="City" />
+            </div>
+
+            <div class="col-md-2 col-md-offset-1 form-group">
+              <label class="sr-only" for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="email address" />
+            </div>
+
+            <button type="submit" class="btn btn-primary col-md-1 col-md-offset-1">Submit</button>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
     </div>
