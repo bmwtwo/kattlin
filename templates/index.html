@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="custom.css">
-    <script src="jquery-1.11.1.min.js"></script>
-    <script src="bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet"
+      href="{{ url_for('static', filename='custom.css') }}">
+    <script src="{{ url_for('static', filename='jquery-1.11.1.min.js') }}">
+    </script>
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}">
+    </script>
 
     <meta charset="utf-8">
     <meta name="description" content="Wondering about the value of your Kelowna-area home? 

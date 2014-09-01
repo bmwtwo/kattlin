@@ -1,6 +1,7 @@
 html {
   /* TODO: update CSS for IE (see: http://css-tricks.com/perfect-full-page-background-image/) */
   /* TODO: give credit for image from http://schon.deviantart.com/art/Kelowna-Dawn-6462-172615865 */
+  /* TODO: make sure this url works in production */
   background: url('background.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
