@@ -1,5 +1,14 @@
+import sqlite3
 from flask import Flask, render_template, request
 app = Flask(__name__)
+
+DATABASE = '/tmp/db.db'
+# TODO: remove before pushing to server 
+DEBUG = True
+# TODO change configuration
+SECRET_KEY = 'development key'
+USERNAME = 'admin'
+PASSWORD = 'default'
 
 @app.route('/')
 def index():
@@ -19,6 +28,4 @@ def submit():
     email )
 
 if __name__ == '__main__':
-  # TODO: remove before pushing to server 
-  app.debug = True
   app.run()
